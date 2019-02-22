@@ -1,0 +1,9 @@
+.settings/
+.idea/
+target/
+.factorypath
+.classpath
+bin/
+src/main/webapp/WEB-INF/static/resources/js/tests/e2e/testresults/
+html-source/node_modules
+debug.log

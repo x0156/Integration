@@ -1,0 +1,15 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: weremsoft/gulp-xvfb-headless-chrome-protractor}
+  
+inputs:
+- name: web-ui
+
+outputs:
+- name: tests
+
+run:
+  path: sh
+  args: ['./web-ui/ci/scripts/functional-test.sh']

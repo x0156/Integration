@@ -1,0 +1,56 @@
+{
+   "name": "eCommerce",
+   "version": "1.0.0",
+   "description": "This contains the details for executing the grunt for build",
+   "scripts": {
+      "test": "./node_modules/karma/bin/karma start --single-run --coverage",
+      "webdriver-update": "webdriver-manager update"
+   },
+   "dependencies": {
+      "assemble": "*",
+      "grunt": ">=0.4.5 <1.0.0",
+      "grunt-contrib-clean": "*",
+      "karma-viewport": "*"
+   },
+   "devDependencies": {
+      "grunt": "*",
+      "grunt-cache-control": "*",
+      "grunt-cli": "*",
+      "grunt-contrib-clean": "*",
+      "grunt-contrib-concat": "*",
+      "grunt-contrib-copy": "*",
+      "grunt-contrib-cssmin": "*",
+      "grunt-contrib-jshint": "*",
+      "grunt-contrib-uglify": "*",
+      "grunt-contrib-watch": "*",
+      "grunt-exit": "*",
+      "grunt-istanbul-coverage": "*",
+      "grunt-karma": "*",
+      "grunt-protractor-runner": "*",
+      "jasmine": "*",
+      "jasmine-ajax": "*",
+      "jasmine-core": "*",
+      "jasmine-jquery": "*",
+      "jasmine-reporters": "^2.3.0",
+      "karma": "*",
+      "karma-chrome-launcher": "*",
+      "karma-cli": "*",
+      "karma-coverage": "*",
+      "karma-htmlfile-reporter": "*",
+      "karma-jasmine": "*",
+      "karma-jasmine-ajax": "*",
+      "karma-junit-reporter": "*",
+      "karma-phantomjs-launcher": "*",
+      "karma-script-launcher": "*",
+      "protractor": "*",
+      "protractor-jasmine2-html-reporter": "*"
+   },
+   "repository": {
+      "type": "git",
+      "url": ""
+   },
+   "private": true,
+   "main": "Gruntfile.js",
+   "author": "",
+   "license": "ISC"
+}

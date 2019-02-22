@@ -24,7 +24,7 @@ exports.config = {
   capabilities: {
     browserName: 'chrome',
     version: 'latest',
-    platform: 'macOS 10.13',
+    //platform: 'macOS 10.13',
     name: 'Taco regression Tests',
     //'time-zone': 'Detroit',
     // maxSessions: 2,

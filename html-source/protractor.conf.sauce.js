@@ -10,7 +10,7 @@ exports.config = {
     //'../src/main/webapp/WEB-INF/static/resources/js/tests/e2e/spec/regressionHealthFirstPageSpec.js'
     //'../src/main/webapp/WEB-INF/static/resources/js/tests/e2e/spec/regressionHealthFirstPageSpec.js'
     //'../src/main/webapp/WEB-INF/static/resources/js/tests/e2e/spec/regressionHFOrgSpec.js'
-    '../src/main/webapp/WEB-INF/static/resources/js/tests/e2e/spec/regression-spec-taco.js'
+    '../src/main/webapp/WEB-INF/static/resources/js/tests/e2e/spec/regression-spec-angular.js'
 
   ],
 
@@ -26,7 +26,7 @@ exports.config = {
     browserName: 'chrome',
     version: 'latest',
     platform: 'macOS 10.13',
-    name: 'Taco regression Tests',
+    name: 'Angular regression Tests',
     //screenResolution:'1024x768',
     //'time-zone': 'Detroit',
     // maxSessions: 2,

@@ -6,7 +6,7 @@ NBCU exports.config = {
 
   //Location of E2E test specs
   specs: [
-    '../src/main/webapp/WEB-INF/static/resources/js/tests/e2e/spec/regression-spec-taco.js'
+    '../src/main/webapp/WEB-INF/static/resources/js/tests/e2e/spec/regression-spec-angular.js'
     //'../src/main/webapp/WEB-INF/static/resources/js/tests/e2e/spec/regressionHFOrgSpec.js'
     //'../src/main/webapp/WEB-INF/static/resources/js/tests/e2e/spec/regressionHealthFirstPageSpec.js'
     //'../src/main/webapp/WEB-INF/static/resources/js/tests/e2e/spec/signUpPageSpec.js'

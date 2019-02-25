@@ -30,6 +30,7 @@ describe('Smoke Suite for the Community Application', function() {
   it('Testcase001 > Test the LOGIN Functionality', function() {
 	  
 	LoginToApp('admin','test123');
+	browser.driver.sleep(3000);
 	var signOutLink = element(by.xpath("//a[text()='Logout']"));
 	signOutLink.click();
 	console.log('The User logged in successfully');	

@@ -37,7 +37,7 @@ describe('Smoke Suite for the Community Application', function() {
 	
   });
   
-    it('Testcase002 > Test the SignUp Functionality', function() {
+  /*  it('Testcase002 > Test the SignUp Functionality', function() {
 	  
 		var signUpButton = element(by.css('.btn.btn-lg.btn-success.ng-binding'));
 	signUpButton.click();
@@ -63,7 +63,7 @@ describe('Smoke Suite for the Community Application', function() {
 	expect(signOutLink.isPresent()).toEqual(true);
 	signOutLink.click();
 	
-  });   
+  });    */
   
   it('Testcase003 > Test the Add Post Page with Elements', function() {
 	

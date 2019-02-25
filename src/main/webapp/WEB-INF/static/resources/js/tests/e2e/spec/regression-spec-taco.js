@@ -60,7 +60,7 @@ describe('Smoke Suite for the Community Application', function() {
 	browser.driver.sleep(3000);	
 	console.log('The user login post sign up was successfully');
 	var signOutLink = element(by.xpath("//a[text()='Logout']"));
-	//expect(signOutLink.isPresent()).toEqual(true);
+	expect(signOutLink.isPresent()).toEqual(true);
 	signOutLink.click();
 	
   });   

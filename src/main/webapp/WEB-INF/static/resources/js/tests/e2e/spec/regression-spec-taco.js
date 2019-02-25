@@ -1,7 +1,7 @@
 
-// Tests for the sample REST APP - http://ec2-3-17-187-0.us-east-2.compute.amazonaws.com:3000/
+// Tests for the sample REST APP - http://10.120.101.126:3000/
 
-describe('Smoke Suite for the Community Application', function() {
+describe('Regression Suite for the Community Application', function() {
 	
 	 beforeEach(function() {
 		 	browser.ignoreSynchronization = true;
@@ -11,7 +11,7 @@ describe('Smoke Suite for the Community Application', function() {
         });
 	
 	
-	function LoginToApp(ID,PASSWORD){
+	function UserLoginToApp(ID,PASSWORD){
 		
 		var usernamelInput = element(by.id('username'));
 		var passwordInput = element(by.id('password'));
@@ -23,13 +23,12 @@ describe('Smoke Suite for the Community Application', function() {
 			OkButton.click();
 			browser.driver.sleep(3000);
 			expect(browser.getTitle()).toEqual('REST EXAMPLE APP');				
-			//var signOutLink = element(by.xpath("//a[text()='Logout']"));
-			//signOutLink.click();
+
 	}	
 	
   it('Testcase001 > Test the LOGIN Functionality', function() {
 	  
-	LoginToApp('admin','test123');
+	UserLoginToApp('admin','test123');
 	browser.driver.sleep(3000);
 	var signOutLink = element(by.xpath("//a[text()='Logout']"));
 	signOutLink.click();
@@ -37,14 +36,14 @@ describe('Smoke Suite for the Community Application', function() {
 	
   });
   
-/*   it('Testcase002 > Test the SignUp Functionality', function() {
+    it('Testcase002 > Test the SignUp Functionality', function() {
 	  
-		var signUpButton = element(by.css('.btn.btn-lg.btn-success.ng-binding'));
+	var signUpButton = element(by.css('.btn.btn-lg.btn-success.ng-binding'));
 	signUpButton.click();
 	browser.driver.sleep(3000);
 	var today = new Date();
 	var user = 'leapuser'+today.getHours()+today.getMilliseconds()+today.getMinutes();
-		var signupUsernameInput = element(by.id('username'));
+		var signupUsernameInput = element(by.name('username'));
 		var sigupPasswordInput = element(by.id('password'));
 		var sigupEmailInput = element(by.id('email'));
 		var sigupNameInput = element(by.id('name'));
@@ -53,28 +52,26 @@ describe('Smoke Suite for the Community Application', function() {
 		sigupPasswordInput.sendKeys('test1ng');
 		sigupEmailInput.sendKeys(user+'@leap.com');
 		sigupNameInput.sendKeys('LEAP Tester');
+		browser.driver.sleep(3000);
 		OkButton.click();
 	browser.driver.sleep(3000);	
 	console.log('The User ['+ user +'] registered successfully');	
-	LoginToApp(user,'test1ng');
+/* 	UserLoginToApp(user,'test1ng');
 	browser.driver.sleep(3000);	
 	console.log('The user login post sign up was successfully');
 	var signOutLink = element(by.xpath("//a[text()='Logout']"));
-	   console.log('--signout present'+signOutLink.isPresent());
-	expect(signOutLink.isPresent()).toEqual(true);
-	   
-	signOutLink.click();
+	signOutLink.click(); */
 	
-  });   */
+  });
   
-  it('Testcase003 > Test the Add Post Page with Elements', function() {
+  it('Testcase003 > Test the Add Post functionality', function() {
 	
 	var addButton = element(by.css('.btn.btn-success.btn-block.ng-binding'));
 	var nameInput = element(by.name('title'));
 	var contentInput = element(by.name('content'));
 	var saveButton = element(by.css('.btn.btn-primary.btn-lg.ng-binding'));
 	var today = new Date();
-	LoginToApp('admin','test123');
+	UserLoginToApp('admin','test123');
 	browser.driver.sleep(3000)
 	addButton.click();
 	nameInput.sendKeys('Post by Protractor script from Leap'+today.getHours()+today.getMilliseconds());

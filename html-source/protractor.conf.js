@@ -25,7 +25,7 @@ exports.config = {
     browserName: 'chrome',
     version: 'latest',
     //platform: 'macOS 10.13',
-    name: 'Taco regression Tests',
+    name: 'Angular regression Tests',
     //'time-zone': 'Detroit',
     // maxSessions: 2,
     //shardTestFiles: true,

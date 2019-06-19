@@ -74,3 +74,4 @@ describe('Regression Suite for the Community Application', function() {
   });
   
  
+});

@@ -64,26 +64,5 @@ describe('Regression Suite for the Community Application', function() {
 	
   });
   
-  it('Testcase003 > Test the Add Post functionality', function() {
-	
-	var addButton = element(by.css('.btn.btn-success.btn-block.ng-binding'));
-	var nameInput = element(by.name('title'));
-	var contentInput = element(by.name('content'));
-	var saveButton = element(by.css('.btn.btn-primary.btn-lg.ng-binding'));
-	var today = new Date();
-	UserLoginToApp('admin','test123');
-	browser.driver.sleep(3000)
-	addButton.click();
-	nameInput.sendKeys('Post by Protractor script from Leap'+today.getHours()+today.getMilliseconds());
-	contentInput.sendKeys('This is a sample content from protractor script for adding a test post...'+today);
-	browser.driver.sleep(1000);
-	saveButton.click();
-	browser.driver.sleep(3000);
-	console.log('The Post was added successfully');
-	var signOutLink = element(by.xpath("//a[text()='Logout']"));
-	signOutLink.click();
-  }); 
-  
-  
-  
+ 
 });

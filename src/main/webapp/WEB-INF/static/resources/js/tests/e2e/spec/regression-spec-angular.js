@@ -5,7 +5,7 @@ describe('Regression Suite for the Community Application', function() {
 	
 	 beforeEach(function() {
 		 	browser.ignoreSynchronization = true;
-			browser.get('http://ec2-3-17-187-0.us-east-2.compute.amazonaws.com:3000/#/login');	
+			browser.get('http://192.168.40.159:3000/#/login');	
             browser.driver.manage().window().maximize();
 			browser.driver.sleep(3000);			
         });
@@ -14,8 +14,7 @@ describe('Regression Suite for the Community Application', function() {
 	function UserLoginToApp(ID,PASSWORD){
 		
 		var usernamelInput = element(by.id('username'));
-		var passwordInput = element(by.id('password'));
-		var OkButton = element(by.buttonText('OK'));			
+		var passwordInput = element(by.id('password'));http://192.168.40.159:3000/#/loginr OkButton = element(by.buttonText('OK'));			
 			usernamelInput.clear();
 			usernamelInput.sendKeys(ID);
 			passwordInput.clear();

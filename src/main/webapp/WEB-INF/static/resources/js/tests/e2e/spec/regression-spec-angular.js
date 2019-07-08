@@ -4,7 +4,7 @@ describe('Regression Suite for the Community Application', function() {
 	
 	 beforeEach(function() {
 		 	browser.ignoreSynchronization = true;
-			browser.get('http://192.168.40.159:3000/#/login');	
+			browser.get('http://ec2-18-188-132-250.us-east-2.compute.amazonaws.com:3000/#/login');	
             browser.driver.manage().window().maximize();
 			browser.driver.sleep(3000);			
         });
